@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://odoo.didierchavez.site/sitemap.xml
