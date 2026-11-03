@@ -11,6 +11,6 @@ export function render() {
         <a class="${button}" href="https://wa.me/573028645014?text=Hola%20Didier%2C%20quiero%20consultar%20sobre%20implementacion%20de%20Odoo" target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" class="size-4"></i>WhatsApp · +57 302 864 5014<i data-lucide="arrow-up-right" class="size-4"></i></a>
         <a class="${buttonSecondary}" href="https://github.com/Didier2101" target="_blank" rel="noopener noreferrer"><i data-lucide="code-xml" class="size-4"></i>GitHub · Didier2101<i data-lucide="arrow-up-right" class="size-4"></i></a>
       </div>
-      <p class="mt-5 text-xs leading-5 text-slate-500">WhatsApp y GitHub son servicios externos sujetos a sus propias políticas y condiciones. GitHub es un perfil público; no publiques allí datos personales, credenciales ni información privada. Consulta los <a class="underline hover:text-slate-300" href="/aviso-legal/">avisos legales y de privacidad</a>.</p>
+      <p class="mt-5 text-xs leading-5 text-slate-400">WhatsApp y GitHub son servicios externos sujetos a sus propias políticas y condiciones. GitHub es un perfil público; no publiques allí datos personales, credenciales ni información privada. Consulta los <a class="underline hover:text-slate-300" href="/aviso-legal/">avisos legales y de privacidad</a>.</p>
     </div></section>`;
 }

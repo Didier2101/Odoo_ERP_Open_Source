@@ -89,10 +89,10 @@ export function planRow(plan) {
         <i data-lucide="${plan.icon}" class="mt-1 size-5 shrink-0 text-blue-300"></i>
         <div class="min-w-0">
           <div class="flex flex-wrap items-center gap-x-3 gap-y-1"><h3 class="text-lg font-bold tracking-tight text-white">${plan.title}</h3><span class="${badge} ${badgeBlue}">${plan.badge}</span></div>
-          <p class="mt-1 text-sm leading-6 text-slate-500">${plan.subtitle}</p>
+          <p class="mt-1 text-sm leading-6 text-slate-400">${plan.subtitle}</p>
           <p class="mt-2 text-sm leading-6 text-slate-400">${plan.description}</p>
           <ul class="mt-3 grid gap-2 sm:grid-cols-2">${items}</ul>
-          <p class="mt-3 text-xs leading-5 text-slate-500">${plan.training}</p>
+          <p class="mt-3 text-xs leading-5 text-slate-400">${plan.training}</p>
         </div>
       </div>
       <a class="${buttonSecondary} w-full sm:w-auto" href="${plan.route}">Ver requisitos<i data-lucide="arrow-right" class="size-4"></i></a>

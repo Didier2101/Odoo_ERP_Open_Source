@@ -20,13 +20,14 @@ export function render() {
       <div class="mt-12"><span class="${eyebrow}">Comparación rápida</span><h2 class="mt-3 text-3xl font-bold tracking-tight text-white">¿Qué cambia entre las opciones?</h2></div>
       <div class="mt-5 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/80">
         <table class="w-full min-w-[650px] border-collapse text-left text-sm">
-          <thead><tr class="text-slate-400"><th class="border-b border-slate-800 p-4">Característica</th><th class="border-b border-slate-800 p-4">Monopuesto</th><th class="border-b border-slate-800 p-4">Red local</th><th class="border-b border-slate-800 p-4">Remoto seguro</th></tr></thead>
-          <tbody>${rows.map(([name, ...values]) => `<tr><th class="border-b border-slate-800 p-4 font-medium text-slate-300">${name}</th>${values.map((value) => `<td class="border-b border-slate-800 p-4 text-slate-400">${value}</td>`).join("")}</tr>`).join("")}
+          <caption class="sr-only">Comparación de características entre los planes de implementación de Odoo</caption>
+          <thead><tr class="text-slate-400"><th scope="col" class="border-b border-slate-800 p-4">Característica</th><th scope="col" class="border-b border-slate-800 p-4">Monopuesto</th><th scope="col" class="border-b border-slate-800 p-4">Red local</th><th scope="col" class="border-b border-slate-800 p-4">Remoto seguro</th></tr></thead>
+          <tbody>${rows.map(([name, ...values]) => `<tr><th scope="row" class="border-b border-slate-800 p-4 font-medium text-slate-300">${name}</th>${values.map((value) => `<td class="border-b border-slate-800 p-4 text-slate-400">${value}</td>`).join("")}</tr>`).join("")}
             <tr><th class="p-4 font-medium text-slate-300">Detalle</th><td class="p-4"><a class="${buttonSecondary} px-3 py-2 text-xs" href="${plans.monopuesto.route}">Ver plan<i data-lucide="arrow-up-right" class="size-4"></i></a></td><td class="p-4"><a class="${buttonSecondary} px-3 py-2 text-xs" href="${plans["red-local"].route}">Ver plan<i data-lucide="arrow-up-right" class="size-4"></i></a></td><td class="p-4"><a class="${buttonSecondary} px-3 py-2 text-xs" href="${plans["remoto-seguro"].route}">Ver plan<i data-lucide="arrow-up-right" class="size-4"></i></a></td></tr>
           </tbody>
         </table>
       </div>
-      <p class="mt-4 text-xs leading-5 text-slate-500">La licencia LGPL de Odoo Community no implica una cuota por usuario. El hardware, dominio, conectividad, VPS, mantenimiento, módulos adicionales y servicios externos corren por cuenta del cliente y pueden tener costos propios; no se garantiza la entrega de mensajes ni la disponibilidad de proveedores.</p>
+      <p class="mt-4 text-xs leading-5 text-slate-400">La licencia LGPL de Odoo Community no implica una cuota por usuario. El hardware, dominio, conectividad, VPS, mantenimiento, módulos adicionales y servicios externos corren por cuenta del cliente y pueden tener costos propios; no se garantiza la entrega de mensajes ni la disponibilidad de proveedores.</p>
       <div class="mt-7"><a class="${button}" href="/contacto/">Pedir una cotización<i data-lucide="arrow-right" class="size-4"></i></a></div>
     </div></section>`;
 }

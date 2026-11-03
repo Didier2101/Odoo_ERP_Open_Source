@@ -13,7 +13,7 @@ export function render() {
     const playlistUrl = `https://www.youtube.com/playlist?list=${course.playlistId}`;
     return `
       <li class="flex flex-col gap-3 py-5 sm:flex-row sm:items-center sm:justify-between">
-        <div class="flex gap-4"><i data-lucide="${course.icon}" class="mt-1 size-5 shrink-0 text-blue-300"></i><div><span class="text-xs font-semibold uppercase tracking-wider text-slate-500">${course.tag}</span><h3 class="mt-1 font-bold text-white">${course.title}</h3><p class="mt-1 text-sm leading-6 text-slate-400">${course.description}</p></div></div>
+        <div class="flex gap-4"><i data-lucide="${course.icon}" class="mt-1 size-5 shrink-0 text-blue-300"></i><div><span class="text-xs font-semibold uppercase tracking-wider text-slate-400">${course.tag}</span><h3 class="mt-1 font-bold text-white">${course.title}</h3><p class="mt-1 text-sm leading-6 text-slate-400">${course.description}</p></div></div>
         <a class="inline-flex min-h-10 shrink-0 items-center gap-2 text-sm font-semibold text-blue-300 hover:text-blue-200 sm:ml-8" href="${playlistUrl}" target="_blank" rel="noopener noreferrer">Abrir lista en YouTube<i data-lucide="arrow-up-right" class="size-4"></i></a>
       </li>`;
   }).join("");
@@ -35,7 +35,7 @@ export function render() {
       <div class="mt-5 rounded-xl border border-amber-400/20 bg-amber-400/[.06] p-4 text-sm leading-6 text-slate-300"><strong class="text-amber-200">Importante:</strong> los tutoriales oficiales pueden mostrar más módulos, opciones o funcionalidades que las incluidas en nuestros planes. El contenido no amplía el alcance contratado ni significa que esas funciones estén configuradas o incluidas; se revisan y cotizan aparte cuando se soliciten. Las pantallas y pasos pueden variar según versión, edición, localización y configuración.</div>
       <div class="mb-5 mt-10"><span class="${eyebrow}">Rutas de aprendizaje</span><h2 class="mt-2 text-2xl font-bold text-white sm:text-3xl">Más procesos para explorar.</h2><p class="mt-2 text-sm leading-6 text-slate-400">Abre las búsquedas de tutoriales del canal oficial de Odoo.</p></div>
       <ul class="divide-y divide-slate-800 border-y border-slate-800">${learningPaths}</ul>
-      <p class="mt-4 text-xs leading-5 text-slate-500">Los reproductores integrados son contenido de YouTube. Al cargarlos, YouTube/Google puede recibir datos técnicos del navegador conforme a sus políticas. Los cursos, idioma, orden y disponibilidad pueden cambiar.</p>
+      <p class="mt-4 text-xs leading-5 text-slate-400">Los reproductores integrados son contenido de YouTube. Al cargarlos, YouTube/Google puede recibir datos técnicos del navegador conforme a sus políticas. Los cursos, idioma, orden y disponibilidad pueden cambiar.</p>
       <div class="mt-6 flex flex-col gap-3 sm:flex-row"><a class="${buttonSecondary}" href="/documentacion/">Consultar documentación<i data-lucide="book-open" class="size-4"></i></a><a class="${button}" href="/contacto/">Solicitar capacitación<i data-lucide="message-circle" class="size-4"></i></a></div>
     </div></section>`;
 }

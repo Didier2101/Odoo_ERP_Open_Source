@@ -20,6 +20,6 @@ export const mutedText = "text-sm leading-7 text-slate-400";
 export const planRowBase = "grid gap-3 border-b border-slate-800 py-5 first:pt-0 last:border-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center";
 export const badge = "inline-flex items-center rounded-full border border-slate-700 px-3 py-1.5 text-[.68rem] font-bold uppercase tracking-wider text-slate-300";
 export const badgeBlue = "border-blue-400/20 bg-blue-500/10 text-blue-300";
-export const finePrint = "text-xs leading-5 text-slate-500";
+export const finePrint = "text-xs leading-5 text-slate-400";
 export const callout = "flex flex-col items-start justify-between gap-5 rounded-2xl border border-blue-400/15 bg-blue-500/[.06] p-5 sm:p-7 lg:flex-row lg:items-center";
 export const input = "mt-2 min-h-11 w-full rounded-lg border border-slate-700 bg-[#090d16] px-3.5 py-3 text-sm text-white outline-none placeholder:text-slate-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20";
